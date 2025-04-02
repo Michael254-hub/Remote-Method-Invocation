@@ -1,9 +1,9 @@
-##**RMI Server**
+# **RMI Server**
 This `Server.java` file sets up the **RMI server** for the chat system. It initializes the **MessageService**, binds it to the RMI registry, and allows clients to connect and exchange messages. Let’s go through the code **line by line**.
 
 ---
 
-# **Step-by-Step Explanation**
+## **Step-by-Step Explanation**
 
 ```java
 import java.rmi.registry.LocateRegistry;
@@ -148,8 +148,8 @@ This `Client.java` file is a Java RMI (Remote Method Invocation) client that con
 ---
 
 
-##**RMI Client**
-### **Step-by-Step Explanation**
+# **RMI Client**
+## **Step-by-Step Explanation**
 
 ```java
 import java.rmi.registry.LocateRegistry;
@@ -297,7 +297,7 @@ public class Client {
 
 ---
 
-##**Remote Interface**
+# **Remote Interface**
 This `MessageClient.java` file defines a **Remote Interface** for an RMI client. It is part of the **RMI chat system**, where clients communicate via a central server. Let's go through the code line by line.
 
 ---
@@ -402,7 +402,7 @@ public class MessageClientImpl extends UnicastRemoteObject implements MessageCli
 
 
 
-## **Message Implementation**
+# **Message Implementation**
 This `MessageClientImpl.java` file implements the `MessageClient` interface, making it a **remote object** that can receive messages in an RMI chat system. Let’s go through the code **line by line** to understand its role.
 
 ---
@@ -509,7 +509,7 @@ service.registerClient(client);
 - It is **exported as a remote object** so the server can call its methods.
 
 
-##**MessageService Implementation
+# **MessageService Implementation
 This `MessageServiceImpl.java` file implements the **server-side logic** for the **RMI chat system**. It manages client registration, message broadcasting, and client unregistration. Let’s break it down **line by line**.
 
 ---
@@ -705,7 +705,7 @@ The `MessageService` interface defines the **core functionalities** of the RMI c
 
 
 
-##**Message Service Remote**
+# **Message Service Remote**
 ## **Step-by-Step Explanation**
 ```java
 import java.rmi.Remote;
